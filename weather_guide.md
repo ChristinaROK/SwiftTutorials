@@ -5,8 +5,20 @@
 * storyboard vs swiftUI
 * Shortcuts
   * command + b => build
+  
   * command + shift + L => list of views
+  
   * command + n => new file
+  
+  * View + command + "Embedd in List" => duplicating Views in list
+  
+  * control + i => 코드 indent 재정렬
+  
+  * command + r => run
+  
+  * command + shift + a => dark mode <-> light mode
+  
+    
 
 ---
 
@@ -23,10 +35,9 @@
 
 ### SwiftUI
 
+* swiftview file
 * Views
-
-  * max: 10 views
-
+* max: 10 views
 * modifiers  (customize Views / ex. buttons)
 
   * command + shift + L
@@ -39,26 +50,25 @@
     * VStack(spacing) {}: vertical
     * HStack() {}: horizontal
     * ZStack() {}
+  * **NaviagtionView**
+    * 
   * modifiers wrap the existed View with **another View** => modifier의 순서가 중요함
   * .padding() / .frame()
   * .resizable()
   * .aspctRatio()
   * .cornerRadius()
   * .toggle() => boolean 값 반전
-
 * coloring
 
   * Color()
   * LinearGradient()
   * .edgesIgnoringSafeArea(.all)
     * 색상을 빈 공간 없이 채우기
-
 * SF Symbols
 
   * parameter
     * systemName: "command + shift + c -> command + v" (ex. "cloud.sun.fill")
   * .renderingMode() : SF Symbol과 같은 사이즈로 만들기
-
 * Extract subview
 
   * 반복적으로 사용되는 view를 **customized view struct**로 만들어줌
@@ -122,3 +132,17 @@
     * value type (<=> created and withdraw all the time! state가 유지되지 않음)
   * Class
     * reference type
+
+* types
+  * Identifiable
+  * UUID
+  * URL
+
+* List
+
+```swift
+List(list, id: \.id) {item in ...}
+// for id in list:
+//	list[id]...
+```
+
