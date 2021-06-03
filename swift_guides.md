@@ -43,15 +43,19 @@
   * command + shift + L
     * Button
     * Text()
-    * Image()
+    * Image() => custom image
+    * SystemImage => SF symbols
     * Spacer()
       * Spacer 아래의 모든 view를  가장 아래로 배치
+    * Link()
   * **stacks**
     * VStack(spacing) {}: vertical
     * HStack() {}: horizontal
     * ZStack() {}
   * **NaviagtionView**
-    * 
+    * 스크롤 가능하게 함
+  * **NavigationLink**
+    * view(`label`)에 다른 페이지로 넘어갈 수 있는 이동 링크를 달아줌
   * modifiers wrap the existed View with **another View** => modifier의 순서가 중요함
   * .padding() / .frame()
   * .resizable()

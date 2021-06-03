@@ -14,25 +14,38 @@ struct VideoListView: View {
     var body: some View {
         NavigationView {
             List(videos, id: \.id) { video in
-                Image(video.imageName)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 100, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .cornerRadius(4)
-                    .padding(.vertical, 4)
-                
-                VStack(alignment: .leading, spacing: 5) {
-                    Text(video.title)
-                        .fontWeight(.semibold)
-                        .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
-                        .minimumScaleFactor(0.5)
-                    
-                    Text(video.uploadDate)
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                }
+                NavigationLink(
+                    destination: VideoDetailView(video: video),
+                    label: {
+                        VideoCell(video: video)
+                    })
             }
             .navigationTitle("Sean's Top 10") // modifier 위치 유의
+        }
+    }
+}
+
+struct VideoCell: View {
+    
+    var video: Video
+    
+    var body: some View {
+        Image(video.imageName)
+            .resizable()
+            .scaledToFit()
+            .frame(width: 100, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .cornerRadius(4)
+            .padding(.vertical, 4)
+        
+        VStack(alignment: .leading, spacing: 5) {
+            Text(video.title)
+                .fontWeight(.semibold)
+                .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                .minimumScaleFactor(0.5)
+            
+            Text(video.uploadDate)
+                .font(.subheadline)
+                .foregroundColor(.secondary)
         }
     }
 }
