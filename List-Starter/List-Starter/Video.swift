@@ -21,7 +21,7 @@ struct VideoList {
    
    static let topTen = [
        Video(imageName: "wish-i-knew",
-             title: "9 Things I Wish I Knew When I Started Programming",
+             title: "9 Things I Wish I Knew When I StartedProgramming",
              description: "In this video I discuss 9 things I wish I knew before I started programming. Knowing these things would have made my journey in becoming a full-time iOS developer so much faster and easier. I hope this advice helps someone out there that's early in their career as a software developer.",
              viewCount: 370222,
              uploadDate: "February 17, 2019",
