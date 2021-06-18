@@ -12,7 +12,8 @@ struct RedOneView: View {
         NavigationView{ // container of array of Views (Stack)
             VStack {
                 CircleNumberView(color: .red, number: 1)
-                    .navigationTitle("Red One")
+//                    .navigationTitle("Red One")
+                    .navigationBarTitle("Red One", displayMode: .inline) // old version 
                     .offset(y: -60)
                 NavigationLink(
                     destination: BlueTwoView(),
@@ -31,10 +32,25 @@ struct BlueTwoView: View {
                 .navigationTitle("Blue Two")
                 .offset(y: -60)
             NavigationLink(
-                destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
+                destination: GreenThreeView(),
                 label: {
                     Text("Next Screen")
                 })
+        }
+    }
+}
+
+struct GreenThreeView: View {
+    var body: some View {
+        VStack {
+            CircleNumberView(color: .green, number: 3)
+                .navigationTitle("Green Three")
+                .offset(y: -60)
+//            NavigationLink(
+//                destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
+//                label: {
+//                    Text("Next Screen")
+//                })
         }
     }
 }

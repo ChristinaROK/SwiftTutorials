@@ -44,7 +44,7 @@
   - Spacer => Spacer 아래의 모든 view를  가장 아래로 배치
   - Link
   - **NaviagtionView**
-    - only keep **ONE** !!!
+    - only keep **ONE** !!! (always put it at the first!)
   - **NavigationLink**
   - **Form & Section **
   - TextField => 텍스트 입력 가능
@@ -68,6 +68,7 @@
 * .cornerRadius()
 * .toggle() => boolean 값 반전
 * .renderingMode() : SF Symbol과 같은 사이즈로 만들기
+* **.sheet()** => 팝업 창 구현 가능
 * coloring
   * Color()
   * LinearGradient()
