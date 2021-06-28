@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		744C2205267E41F1005B63FD /* picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744C2204267E41F1005B63FD /* picker.swift */; };
-		74B56F62267CE3BE00B7E4E8 /* FormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B56F61267CE3BE00B7E4E8 /* FormApp.swift */; };
-		74B56F64267CE3BE00B7E4E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B56F63267CE3BE00B7E4E8 /* ContentView.swift */; };
-		74B56F66267CE3C200B7E4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B56F65267CE3C200B7E4E8 /* Assets.xcassets */; };
-		74B56F69267CE3C200B7E4E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B56F68267CE3C200B7E4E8 /* Preview Assets.xcassets */; };
+		7474E403268A1AFE0001ACEA /* Swift101App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474E402268A1AFE0001ACEA /* Swift101App.swift */; };
+		7474E405268A1AFE0001ACEA /* IfGuardLetOnApper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474E404268A1AFE0001ACEA /* IfGuardLetOnApper.swift */; };
+		7474E407268A1B010001ACEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7474E406268A1B010001ACEA /* Assets.xcassets */; };
+		7474E40A268A1B010001ACEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7474E409268A1B010001ACEA /* Preview Assets.xcassets */; };
+		7474E414268A23810001ACEA /* OnAppearOnDisappear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474E413268A23810001ACEA /* OnAppearOnDisappear.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		744C2204267E41F1005B63FD /* picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = picker.swift; sourceTree = "<group>"; };
-		74B56F5E267CE3BE00B7E4E8 /* Form.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Form.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		74B56F61267CE3BE00B7E4E8 /* FormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormApp.swift; sourceTree = "<group>"; };
-		74B56F63267CE3BE00B7E4E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		74B56F65267CE3C200B7E4E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		74B56F68267CE3C200B7E4E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		74B56F6A267CE3C200B7E4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7474E3FF268A1AFE0001ACEA /* Swift101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift101.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7474E402268A1AFE0001ACEA /* Swift101App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift101App.swift; sourceTree = "<group>"; };
+		7474E404268A1AFE0001ACEA /* IfGuardLetOnApper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfGuardLetOnApper.swift; sourceTree = "<group>"; };
+		7474E406268A1B010001ACEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7474E409268A1B010001ACEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7474E40B268A1B010001ACEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7474E413268A23810001ACEA /* OnAppearOnDisappear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAppearOnDisappear.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		74B56F5B267CE3BE00B7E4E8 /* Frameworks */ = {
+		7474E3FC268A1AFE0001ACEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,39 +35,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		74B56F55267CE3BE00B7E4E8 = {
+		7474E3F6268A1AFE0001ACEA = {
 			isa = PBXGroup;
 			children = (
-				74B56F60267CE3BE00B7E4E8 /* Form */,
-				74B56F5F267CE3BE00B7E4E8 /* Products */,
+				7474E401268A1AFE0001ACEA /* Swift101 */,
+				7474E400268A1AFE0001ACEA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		74B56F5F267CE3BE00B7E4E8 /* Products */ = {
+		7474E400268A1AFE0001ACEA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74B56F5E267CE3BE00B7E4E8 /* Form.app */,
+				7474E3FF268A1AFE0001ACEA /* Swift101.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		74B56F60267CE3BE00B7E4E8 /* Form */ = {
+		7474E401268A1AFE0001ACEA /* Swift101 */ = {
 			isa = PBXGroup;
 			children = (
-				74B56F61267CE3BE00B7E4E8 /* FormApp.swift */,
-				74B56F63267CE3BE00B7E4E8 /* ContentView.swift */,
-				744C2204267E41F1005B63FD /* picker.swift */,
-				74B56F65267CE3C200B7E4E8 /* Assets.xcassets */,
-				74B56F6A267CE3C200B7E4E8 /* Info.plist */,
-				74B56F67267CE3C200B7E4E8 /* Preview Content */,
+				7474E402268A1AFE0001ACEA /* Swift101App.swift */,
+				7474E404268A1AFE0001ACEA /* IfGuardLetOnApper.swift */,
+				7474E413268A23810001ACEA /* OnAppearOnDisappear.swift */,
+				7474E406268A1B010001ACEA /* Assets.xcassets */,
+				7474E40B268A1B010001ACEA /* Info.plist */,
+				7474E408268A1B010001ACEA /* Preview Content */,
 			);
-			path = Form;
+			path = Swift101;
 			sourceTree = "<group>";
 		};
-		74B56F67267CE3C200B7E4E8 /* Preview Content */ = {
+		7474E408268A1B010001ACEA /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				74B56F68267CE3C200B7E4E8 /* Preview Assets.xcassets */,
+				7474E409268A1B010001ACEA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -75,38 +75,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		74B56F5D267CE3BE00B7E4E8 /* Form */ = {
+		7474E3FE268A1AFE0001ACEA /* Swift101 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74B56F6D267CE3C200B7E4E8 /* Build configuration list for PBXNativeTarget "Form" */;
+			buildConfigurationList = 7474E40E268A1B010001ACEA /* Build configuration list for PBXNativeTarget "Swift101" */;
 			buildPhases = (
-				74B56F5A267CE3BE00B7E4E8 /* Sources */,
-				74B56F5B267CE3BE00B7E4E8 /* Frameworks */,
-				74B56F5C267CE3BE00B7E4E8 /* Resources */,
+				7474E3FB268A1AFE0001ACEA /* Sources */,
+				7474E3FC268A1AFE0001ACEA /* Frameworks */,
+				7474E3FD268A1AFE0001ACEA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Form;
-			productName = Form;
-			productReference = 74B56F5E267CE3BE00B7E4E8 /* Form.app */;
+			name = Swift101;
+			productName = Swift101;
+			productReference = 7474E3FF268A1AFE0001ACEA /* Swift101.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		74B56F56267CE3BE00B7E4E8 /* Project object */ = {
+		7474E3F7268A1AFE0001ACEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					74B56F5D267CE3BE00B7E4E8 = {
+					7474E3FE268A1AFE0001ACEA = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = 74B56F59267CE3BE00B7E4E8 /* Build configuration list for PBXProject "Form" */;
+			buildConfigurationList = 7474E3FA268A1AFE0001ACEA /* Build configuration list for PBXProject "Swift101" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,43 +114,43 @@
 				en,
 				Base,
 			);
-			mainGroup = 74B56F55267CE3BE00B7E4E8;
-			productRefGroup = 74B56F5F267CE3BE00B7E4E8 /* Products */;
+			mainGroup = 7474E3F6268A1AFE0001ACEA;
+			productRefGroup = 7474E400268A1AFE0001ACEA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				74B56F5D267CE3BE00B7E4E8 /* Form */,
+				7474E3FE268A1AFE0001ACEA /* Swift101 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		74B56F5C267CE3BE00B7E4E8 /* Resources */ = {
+		7474E3FD268A1AFE0001ACEA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B56F69267CE3C200B7E4E8 /* Preview Assets.xcassets in Resources */,
-				74B56F66267CE3C200B7E4E8 /* Assets.xcassets in Resources */,
+				7474E40A268A1B010001ACEA /* Preview Assets.xcassets in Resources */,
+				7474E407268A1B010001ACEA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		74B56F5A267CE3BE00B7E4E8 /* Sources */ = {
+		7474E3FB268A1AFE0001ACEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B56F64267CE3BE00B7E4E8 /* ContentView.swift in Sources */,
-				744C2205267E41F1005B63FD /* picker.swift in Sources */,
-				74B56F62267CE3BE00B7E4E8 /* FormApp.swift in Sources */,
+				7474E405268A1AFE0001ACEA /* IfGuardLetOnApper.swift in Sources */,
+				7474E414268A23810001ACEA /* OnAppearOnDisappear.swift in Sources */,
+				7474E403268A1AFE0001ACEA /* Swift101App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		74B56F6B267CE3C200B7E4E8 /* Debug */ = {
+		7474E40C268A1B010001ACEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -211,7 +211,7 @@
 			};
 			name = Debug;
 		};
-		74B56F6C267CE3C200B7E4E8 /* Release */ = {
+		7474E40D268A1B010001ACEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,44 +266,44 @@
 			};
 			name = Release;
 		};
-		74B56F6E267CE3C200B7E4E8 /* Debug */ = {
+		7474E40F268A1B010001ACEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Form/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Swift101/Preview Content\"";
 				DEVELOPMENT_TEAM = YN3JSHXR3K;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Form/Info.plist;
+				INFOPLIST_FILE = Swift101/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = christina.Form;
+				PRODUCT_BUNDLE_IDENTIFIER = christina.Swift101;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		74B56F6F267CE3C200B7E4E8 /* Release */ = {
+		7474E410268A1B010001ACEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Form/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Swift101/Preview Content\"";
 				DEVELOPMENT_TEAM = YN3JSHXR3K;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Form/Info.plist;
+				INFOPLIST_FILE = Swift101/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = christina.Form;
+				PRODUCT_BUNDLE_IDENTIFIER = christina.Swift101;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,25 +313,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		74B56F59267CE3BE00B7E4E8 /* Build configuration list for PBXProject "Form" */ = {
+		7474E3FA268A1AFE0001ACEA /* Build configuration list for PBXProject "Swift101" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74B56F6B267CE3C200B7E4E8 /* Debug */,
-				74B56F6C267CE3C200B7E4E8 /* Release */,
+				7474E40C268A1B010001ACEA /* Debug */,
+				7474E40D268A1B010001ACEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74B56F6D267CE3C200B7E4E8 /* Build configuration list for PBXNativeTarget "Form" */ = {
+		7474E40E268A1B010001ACEA /* Build configuration list for PBXNativeTarget "Swift101" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74B56F6E267CE3C200B7E4E8 /* Debug */,
-				74B56F6F267CE3C200B7E4E8 /* Release */,
+				7474E40F268A1B010001ACEA /* Debug */,
+				7474E410268A1B010001ACEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 74B56F56267CE3BE00B7E4E8 /* Project object */;
+	rootObject = 7474E3F7268A1AFE0001ACEA /* Project object */;
 }
