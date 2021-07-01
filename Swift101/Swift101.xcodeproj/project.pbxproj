@@ -12,6 +12,7 @@
 		7474E407268A1B010001ACEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7474E406268A1B010001ACEA /* Assets.xcassets */; };
 		7474E40A268A1B010001ACEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7474E409268A1B010001ACEA /* Preview Assets.xcassets */; };
 		7474E414268A23810001ACEA /* OnAppearOnDisappear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474E413268A23810001ACEA /* OnAppearOnDisappear.swift */; };
+		747AB2DC268E0F4E00A0A482 /* InitEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747AB2DB268E0F4E00A0A482 /* InitEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7474E409268A1B010001ACEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7474E40B268A1B010001ACEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7474E413268A23810001ACEA /* OnAppearOnDisappear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAppearOnDisappear.swift; sourceTree = "<group>"; };
+		747AB2DB268E0F4E00A0A482 /* InitEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				7474E402268A1AFE0001ACEA /* Swift101App.swift */,
 				7474E404268A1AFE0001ACEA /* IfGuardLetOnApper.swift */,
 				7474E413268A23810001ACEA /* OnAppearOnDisappear.swift */,
+				747AB2DB268E0F4E00A0A482 /* InitEnum.swift */,
 				7474E406268A1B010001ACEA /* Assets.xcassets */,
 				7474E40B268A1B010001ACEA /* Info.plist */,
 				7474E408268A1B010001ACEA /* Preview Content */,
@@ -143,6 +146,7 @@
 			files = (
 				7474E405268A1AFE0001ACEA /* IfGuardLetOnApper.swift in Sources */,
 				7474E414268A23810001ACEA /* OnAppearOnDisappear.swift in Sources */,
+				747AB2DC268E0F4E00A0A482 /* InitEnum.swift in Sources */,
 				7474E403268A1AFE0001ACEA /* Swift101App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
