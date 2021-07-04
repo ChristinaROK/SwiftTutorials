@@ -17,6 +17,7 @@
   - private 
   - public
   - final
+  - static 
 - safe coding
   - if let
   - let gaurd
@@ -37,7 +38,8 @@ let guard newVar = optionalVar else {
 }
 ```
 
-
+* Closure
+* Self variable
 
 ----
 
@@ -80,6 +82,7 @@ Button(label, action)
     * SegmentedPickerStyle
 
 - Toggle (on&off)
+  - Boolean var로 제어
   - toggleStyle: 버튼 색상 바꿈
 - .toolbar()
   - ToolbarItem
@@ -113,6 +116,16 @@ Button(label, action)
 - LazyVStack
   - 큰 데이터를 한 번에 불러오지 않는 장점 
 - ScrollView
+- .onTapGesture()
+  - 클릭 또는 더블 클릭시  closure를 실행
+- EditMode (Enumeration)
+  - case
+    - active
+    - inactive
+    - transient
+- EditButton()
+- environment(environment value, value)
+  - environment value(ex. editMode)에 value를 할당 
 
 ##### ToDo
 
