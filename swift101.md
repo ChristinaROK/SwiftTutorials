@@ -9,15 +9,28 @@
     - value type
     - create & destroy and recreated
     - default value (no data stored)
-- keyword / protocol / property wrapper
-- - @State
+  
+- Protocol (keyword / property wrapper)
+
+  - Hashable
+    - Swift can generate hash value
+    - `\.self` == identifier
+    - ex. String, Int
+    - 만약 `struct` 의 모든 데이터(property)가 hashable type이라면, struct 자체도 hashable이 됨
+  - Identifiable
+  - @State
     - SwiftUI가 해당 property의 값을 저장함. 따라서 property 값이 변하면 이에 따라 view도 변함
+
   - @Binding
   - @Published
-  - private 
-  - public
-  - final
-  - static 
+
+- private 
+- public
+
+- final
+
+- static 
+
 - safe coding
   - if let
   - let gaurd
@@ -101,6 +114,8 @@ Button(label, action)
     - list의 요소를 삭제
   - .onMove()
     - list의 요소를 이동
+  - .onInsert()
+    - list 요소를 추가
   - .listStyle()
     - list formatting 변경
   - listRowBackground

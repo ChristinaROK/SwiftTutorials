@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MobileCoreServices
 
 struct ListEditMode: View {
     
@@ -24,10 +25,11 @@ struct ListEditMode: View {
                 }
                 .onDelete(perform: onDelete)
                 .onMove(perform: onMove)
+//                .onInsert(of: [String(kUTTypeURL)], perform: onInsert)
             }
             .navigationBarTitle("List")
-//            .navigationBarItems(leading: EditButton(), trailing: addButton)
-            .navigationBarItems(trailing: addButton)
+            .navigationBarItems(leading: EditButton(), trailing: addButton)
+//            .navigationBarItems(trailing: addButton)
             .environment(\.editMode, $editMode)
         // TODO: tap empty area -> editMode == inactive
         
@@ -58,9 +60,23 @@ struct ListEditMode: View {
         items.remove(atOffsets: offsets)
     }
     
+    
     private func onMove(source: IndexSet, destination: Int) {
         items.move(fromOffsets: source, toOffset: destination)
     }
+    
+    
+//    private func onInsert(at offset: Int, itemProvider: [NSItemProvider]) {
+//        for provider in itemProvider {
+//            if provider.canLoadObject(ofClass: URL.self) {
+//                _ = provider.canLoadObject(ofClass: URL.self) { url, error in
+//                    DispatchQueue.main.async {
+//                        url.map { self.items.insert(Item(title: $0.absoluteString), at: offset) }
+//                    }
+//                }
+//            }
+//        }
+//    }
     
 }
 

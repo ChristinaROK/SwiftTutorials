@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7400D5492693480E005B4031 /* ModelStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7400D5482693480E005B4031 /* ModelStruct.swift */; };
 		7474E403268A1AFE0001ACEA /* Swift101App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474E402268A1AFE0001ACEA /* Swift101App.swift */; };
 		7474E405268A1AFE0001ACEA /* IfGuardLetOnApper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474E404268A1AFE0001ACEA /* IfGuardLetOnApper.swift */; };
 		7474E407268A1B010001ACEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7474E406268A1B010001ACEA /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7400D5482693480E005B4031 /* ModelStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStruct.swift; sourceTree = "<group>"; };
 		7474E3FF268A1AFE0001ACEA /* Swift101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7474E402268A1AFE0001ACEA /* Swift101App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift101App.swift; sourceTree = "<group>"; };
 		7474E404268A1AFE0001ACEA /* IfGuardLetOnApper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfGuardLetOnApper.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				747AB2DB268E0F4E00A0A482 /* InitEnum.swift */,
 				74848DEF2690D0DB00764BCA /* onTapGesture.swift */,
 				74848DF22690D73500764BCA /* ListEditMode.swift */,
+				7400D5482693480E005B4031 /* ModelStruct.swift */,
 				7474E406268A1B010001ACEA /* Assets.xcassets */,
 				7474E40B268A1B010001ACEA /* Info.plist */,
 				7474E408268A1B010001ACEA /* Preview Content */,
@@ -156,6 +159,7 @@
 				74848DF02690D0DB00764BCA /* onTapGesture.swift in Sources */,
 				747AB2DC268E0F4E00A0A482 /* InitEnum.swift in Sources */,
 				7474E403268A1AFE0001ACEA /* Swift101App.swift in Sources */,
+				7400D5492693480E005B4031 /* ModelStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
