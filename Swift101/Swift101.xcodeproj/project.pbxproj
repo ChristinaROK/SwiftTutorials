@@ -19,6 +19,7 @@
 		74848DF32690D73500764BCA /* ListEditMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74848DF22690D73500764BCA /* ListEditMode.swift */; };
 		74C9C46B2695F5B300102BF0 /* StateKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C9C46A2695F5B300102BF0 /* StateKeyword.swift */; };
 		74D8E9F22697488F0097C3F1 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E9F12697488F0097C3F1 /* Frame.swift */; };
+		74DCED5F2698938A00294C5D /* ScrollViewBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DCED5E2698938A00294C5D /* ScrollViewBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		74848DF22690D73500764BCA /* ListEditMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEditMode.swift; sourceTree = "<group>"; };
 		74C9C46A2695F5B300102BF0 /* StateKeyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateKeyword.swift; sourceTree = "<group>"; };
 		74D8E9F12697488F0097C3F1 /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
+		74DCED5E2698938A00294C5D /* ScrollViewBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,6 @@
 		7474E3F6268A1AFE0001ACEA = {
 			isa = PBXGroup;
 			children = (
-				74D8E9F12697488F0097C3F1 /* Frame.swift */,
 				7474E401268A1AFE0001ACEA /* Swift101 */,
 				7474E400268A1AFE0001ACEA /* Products */,
 			);
@@ -69,6 +70,8 @@
 		7474E401268A1AFE0001ACEA /* Swift101 */ = {
 			isa = PBXGroup;
 			children = (
+				74D8E9F12697488F0097C3F1 /* Frame.swift */,
+				74DCED5E2698938A00294C5D /* ScrollViewBootcamp.swift */,
 				7474E402268A1AFE0001ACEA /* Swift101App.swift */,
 				7474E404268A1AFE0001ACEA /* IfGuardLetOnApper.swift */,
 				7474E413268A23810001ACEA /* OnAppearOnDisappear.swift */,
@@ -169,6 +172,7 @@
 				74848DF02690D0DB00764BCA /* onTapGesture.swift in Sources */,
 				74C9C46B2695F5B300102BF0 /* StateKeyword.swift in Sources */,
 				747AB2DC268E0F4E00A0A482 /* InitEnum.swift in Sources */,
+				74DCED5F2698938A00294C5D /* ScrollViewBootcamp.swift in Sources */,
 				7474E403268A1AFE0001ACEA /* Swift101App.swift in Sources */,
 				7400D5492693480E005B4031 /* ModelStruct.swift in Sources */,
 				74D8E9F22697488F0097C3F1 /* Frame.swift in Sources */,

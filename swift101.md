@@ -131,6 +131,8 @@ Button(label, action)
 - LazyVStack
   - 큰 데이터를 한 번에 불러오지 않는 장점 
 - ScrollView
+  - view를 horizontal, vertical하게 스크롤 가능
+  - LazyV(H)Stack + ForEach와 주로 같이 쓰임
 - .onTapGesture()
   - 클릭 또는 더블 클릭시  closure를 실행
 - EditMode (Enumeration)
