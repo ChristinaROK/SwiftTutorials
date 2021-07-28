@@ -11,7 +11,7 @@ import SwiftUI
 struct Swift101App: App {
     var body: some Scene {
         WindowGroup {
-            IfGuardLetOnApper()
+            AppStorageBootcamp()
         }
     }
 }

@@ -18,6 +18,10 @@ class FruitViewModel: ObservableObject {
     @Published var fruitArray: [FruitModel] = []
     @Published var isLoading: Bool = false
     
+    init() {
+        getFruits()
+    }
+    
     func getFruits() {
         let fruit1 = FruitModel(name: "oragne", count: 88)
         let fruit2 = FruitModel(name: "banana", count: 2)
@@ -67,31 +71,43 @@ struct ObjectWrapper: View {
             }
             .listStyle(GroupedListStyle())
             .navigationTitle("Fruit List")
-            .onAppear(perform: fruitViewModel.getFruits)
+            .navigationBarItems(trailing:
+                                NavigationLink(
+                                    destination: SecondScreen(fruitViewModel: fruitViewModel),
+                                    label: {
+                                        Image(systemName: "arrow.right")
+                                            .font(.title)
+                                    }
+                                )
+            )
+            
         }
     }
 }
 
 struct SecondScreen: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    // SubView에서는 ObservedObject property wrapper를 사용해 ...
+    @ObservedObject var fruitViewModel: FruitViewModel
+    
     var body: some View {
         ZStack {
             Color.green.ignoresSafeArea()
             
-            Button(action: {
-                
-            }, label: {
-                Text("Go Back")
-                    .foregroundColor(.white)
-                    .font(.largeTitle)
-            })
+            VStack {
+                ForEach(fruitViewModel.fruitArray) { fruit in
+                    Text(fruit.name)
+                        .foregroundColor(.white)
+                        .font(.headline)
+                }
+            }
         }
     }
 }
 
 struct ObjectWrapper_Previews: PreviewProvider {
     static var previews: some View {
-        //ObjectWrapper()
-        SecondScreen()
+        ObjectWrapper()
     }
 }
