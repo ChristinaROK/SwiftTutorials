@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74AC6A8026BC866E00AD9150 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AC6A7F26BC866E00AD9150 /* Charts.swift */; };
+		74AC6A8426BC880500AD9150 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 74AC6A8326BC880500AD9150 /* SwiftUICharts */; };
 		74CEBDE626AD0268003613B3 /* SwiftIntermediateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CEBDE526AD0268003613B3 /* SwiftIntermediateApp.swift */; };
 		74CEBDE826AD0268003613B3 /* GeometryReaderBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CEBDE726AD0268003613B3 /* GeometryReaderBootcamp.swift */; };
 		74CEBDEA26AD0269003613B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CEBDE926AD0269003613B3 /* Assets.xcassets */; };
@@ -14,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74AC6A7F26BC866E00AD9150 /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
 		74CEBDE226AD0268003613B3 /* SwiftIntermediate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftIntermediate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CEBDE526AD0268003613B3 /* SwiftIntermediateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftIntermediateApp.swift; sourceTree = "<group>"; };
 		74CEBDE726AD0268003613B3 /* GeometryReaderBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderBootcamp.swift; sourceTree = "<group>"; };
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74AC6A8426BC880500AD9150 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +56,7 @@
 		74CEBDE426AD0268003613B3 /* SwiftIntermediate */ = {
 			isa = PBXGroup;
 			children = (
+				74AC6A7F26BC866E00AD9150 /* Charts.swift */,
 				74CEBDE526AD0268003613B3 /* SwiftIntermediateApp.swift */,
 				74CEBDE726AD0268003613B3 /* GeometryReaderBootcamp.swift */,
 				74CEBDE926AD0269003613B3 /* Assets.xcassets */,
@@ -85,6 +90,9 @@
 			dependencies = (
 			);
 			name = SwiftIntermediate;
+			packageProductDependencies = (
+				74AC6A8326BC880500AD9150 /* SwiftUICharts */,
+			);
 			productName = SwiftIntermediate;
 			productReference = 74CEBDE226AD0268003613B3 /* SwiftIntermediate.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +120,9 @@
 				Base,
 			);
 			mainGroup = 74CEBDD926AD0268003613B3;
+			packageReferences = (
+				74AC6A8226BC880500AD9150 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 74CEBDE326AD0268003613B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74AC6A8026BC866E00AD9150 /* Charts.swift in Sources */,
 				74CEBDE826AD0268003613B3 /* GeometryReaderBootcamp.swift in Sources */,
 				74CEBDE626AD0268003613B3 /* SwiftIntermediateApp.swift in Sources */,
 			);
@@ -328,6 +340,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74AC6A8226BC880500AD9150 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74AC6A8326BC880500AD9150 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74AC6A8226BC880500AD9150 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74CEBDDA26AD0268003613B3 /* Project object */;
 }

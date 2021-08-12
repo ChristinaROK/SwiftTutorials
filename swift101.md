@@ -60,7 +60,129 @@
 
   - Computed Property (enumeration & class & struct type)
 
-    - 값이 저장되는 것이 아니라 **getter, setter** (optional)로 값을 indirectly하게 받도록 함
+    - 값이 저장되는 것이 아니라 **getter, setter** (optional)로 값을 indirectly하게 받도록 함. 값이 매번 변하기 때문에 항상 **var** 로 선언해야함
+    
+    ```swift
+    var square = Rect(size: Size(width: 10, height: 10)) 
+    let initialCenter = square.center // center의 getter 사용
+    square.center = Point(x: 15, y: 15) // center의 setter 사용
+    
+    ```
+    
+    * getter & setter 구현 
+    
+    ```swift
+    struct Point {
+      var x = 0.0, y = 0.0
+    }
+    
+    struct Size {
+      var width = 0.0, height = 0.0
+    }
+    
+    struct Rect {
+      var origin = Point()
+      var size = Size()
+      var center: Point {
+        get {
+          let centerX = origin.x + (size.width / 2)
+          let centerY = origin.y + (size.height / 2)
+          return Point(x: centerX, y: centerY)
+        }
+        set(newCenter: Point) {
+          origin.x = newCenter.x - (size.width / 2)
+          origin.y = newCenter.y - (size.height / 2)
+        }
+      }
+    }
+    ```
+    
+    * getter & setter 간결한 코드
+      * `newValue` : swift buit-in parameter
+    
+    ```swift
+    struct Rect {
+      var origin = Point()
+      var size = Size()
+      var center: Point {
+        get { // return 없어도 자동으로 return 됨
+          Point(x: origin.x + (size.width / 2), y: origin.y + (size.height / 2))
+        }
+        set() { // parameter 별로도 지정하지 않아도 자동으로 newValue로 세팅됨
+          origin.x = newValue.x - (size.width / 2)
+          origin.y = newValue.y - (size.height / 2)
+        }
+      }
+    }
+    ```
+
+* Property Observers
+
+  * property의 **값이 할당되는 (set) 순간 (값이 변하지 않아도 호출됨)**  해당 함수가 호출됨. 
+  * *주의* : inherited or computed property는 property observer 직접 사용하지 않아도 됨
+    * inherited property 
+      * overriding을 사용 
+    * computed property
+      * setter를 사용
+  * **`willSet`** : value에 값이 할당되기 직접에 호출됨
+    * `newValue` : swift buit-in parameter
+  * **`didSet`** : value에 값이 할당된 직후 호출됨
+    * `oldValue` : swift buit-in parameter
+
+  ```swift
+  class StepCounter {
+    var totalSteps: Int = 0 {
+      willSet(newTotalSteps) { // <=> newValue
+        print("About to set totalStpes to \(newTotalSteps)")
+      }
+      didSet {
+        if totalSteps > oldValue { // oldValue <- 기존 totalSteps
+          print("Added \(totalSteps - oldValue) steps")
+        }
+      }
+    }
+  }
+    
+  let stepCounter = StepCounter()
+  stepCounter.totalSteps = 200 
+  // About to set totalSteps to 200
+  // Added 200 steps
+    
+  ```
+
+* Property Wrapper
+
+  * property value를 DB에 저장하는 등, **value storage에 관련된 처리를 담당하는** 코드 (기존 property 정의하는 코드 위에 쌓는 별개의 layer라고 생각할 수 있음. 여러 property에 사용될 수 있음)
+  * `wrappedValue` : swift buit-in parameter
+
+  ```swift
+  @propertyWrapper
+  struct TwelveOrLess {
+    private var number = 0 // TwelveOrLess.number와 같이 property를 직접적으로 호츌하지 못함. TwelveOrLess.wrappedValue와 같이 사용해 getter로 호출해야 함
+    var wrappedValue: Int { 
+      get {
+        return number
+      }
+      set {
+        number = min(newValue, 12)
+      }
+    }
+  }
+  
+  // application
+  struct SmallRectangle {
+    @TwelveOrLess var height: Int
+    @TwelveOrLess var width: Int
+  }
+  
+  var rectangle = SmallRectangle()
+  rectangle.height = 24
+  print(renctangle.height)
+  // 12
+  
+  ```
+
+  
 
 - Protocol (keyword / **property wrapper**)
 
@@ -297,8 +419,14 @@ Button(label, action)
   - DateFormatter(): class 
 - UIScreen.main.bounds.width (height) : portrait mode의 width 값. 따라서 landscape모드로 변경되도 landscape mode의 width 값으로 변환도지 않음.
 - GeometryReader : View의 정확한 x,y,z 값을 알고 싶을 때 사용, 하지만 computationally expensive하기 때문에 가급적이면 UIScreen을 사용.
+- withAnimation  { }
+- .transition() : View에 움직임을 추가함. `withAnimation` 과 함께 사용됨 
+  - .slide `ex) .transition(.slide)`
+  - .scale ex) `.transition(scale)`
+  - `transition(.move(edge: .bottom))`
 
-
+* TabView: 하단 탭 바를 통해 뷰를 이동할 수 있음
+  * .tabItem { View }
 
 
 ---
@@ -372,5 +500,16 @@ UserDefaults.standard.integer(forKey: "id")
 
 ##### Date 간격을 계산
 
-* DateComponents
 * Calendar
+  * **Date간 계산이나 비교**를 위해 사용되는 struct. DateComponent와 Date간 교환할 수 있는 함수를 제공
+  * initialize
+    * Calendar.current: User가 사용하는 Calendar를 가져옴
+  * DateComponent -> Date
+    * Calendar.current.date(DateComponent)
+  * Date -> DateComponent
+    * Calendar.current.component(format, Date)
+  * Date 연산
+    * Calendar.current.nextDate() : 파라미터 Component를 만족하는 Date의 바로 다음 날짜를 구함
+* DateComponent
+* DateFormatter: Date를 형식 맞춰서 String으로 변경
+* Date

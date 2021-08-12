@@ -18,6 +18,7 @@
 		7474E40A268A1B010001ACEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7474E409268A1B010001ACEA /* Preview Assets.xcassets */; };
 		7474E414268A23810001ACEA /* OnAppearOnDisappear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7474E413268A23810001ACEA /* OnAppearOnDisappear.swift */; };
 		7476258526A08AE900D22C3C /* CustomViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7476258426A08AE900D22C3C /* CustomViewModifier.swift */; };
+		7478932126BF8F5300E73ECF /* tabviewBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7478932026BF8F5300E73ECF /* tabviewBootcamp.swift */; };
 		747AB2DC268E0F4E00A0A482 /* InitEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747AB2DB268E0F4E00A0A482 /* InitEnum.swift */; };
 		74848DF02690D0DB00764BCA /* onTapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74848DEF2690D0DB00764BCA /* onTapGesture.swift */; };
 		74848DF32690D73500764BCA /* ListEditMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74848DF22690D73500764BCA /* ListEditMode.swift */; };
@@ -43,6 +44,7 @@
 		7474E40B268A1B010001ACEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7474E413268A23810001ACEA /* OnAppearOnDisappear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAppearOnDisappear.swift; sourceTree = "<group>"; };
 		7476258426A08AE900D22C3C /* CustomViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifier.swift; sourceTree = "<group>"; };
+		7478932026BF8F5300E73ECF /* tabviewBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabviewBootcamp.swift; sourceTree = "<group>"; };
 		747AB2DB268E0F4E00A0A482 /* InitEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitEnum.swift; sourceTree = "<group>"; };
 		74848DEF2690D0DB00764BCA /* onTapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onTapGesture.swift; sourceTree = "<group>"; };
 		74848DF22690D73500764BCA /* ListEditMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEditMode.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				740EC1A626A33D3700C04739 /* AppStorageBootcamp.swift */,
 				7474E408268A1B010001ACEA /* Preview Content */,
 				7487CDBA26A9BA7E009345B1 /* DateBootcamp.swift */,
+				7478932026BF8F5300E73ECF /* tabviewBootcamp.swift */,
 				74C34D1126AEDAB900FFD1FB /* PropertyBootcamp.swift */,
 			);
 			path = Swift101;
@@ -199,6 +202,7 @@
 				747AB2DC268E0F4E00A0A482 /* InitEnum.swift in Sources */,
 				740EC1A326A3337C00C04739 /* EnvironmentObjectWrapper.swift in Sources */,
 				74DCED5F2698938A00294C5D /* ScrollViewBootcamp.swift in Sources */,
+				7478932126BF8F5300E73ECF /* tabviewBootcamp.swift in Sources */,
 				7474E403268A1AFE0001ACEA /* Swift101App.swift in Sources */,
 				743AC05C26A2E55A00D10E95 /* ObjectWrapper.swift in Sources */,
 				7476258526A08AE900D22C3C /* CustomViewModifier.swift in Sources */,
