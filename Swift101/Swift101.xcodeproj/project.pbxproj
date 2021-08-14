@@ -28,6 +28,7 @@
 		74D8E9F22697488F0097C3F1 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E9F12697488F0097C3F1 /* Frame.swift */; };
 		74DCED5F2698938A00294C5D /* ScrollViewBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DCED5E2698938A00294C5D /* ScrollViewBootcamp.swift */; };
 		74F0A48F269B506A00F936BC /* dateViewAbstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0A48E269B506A00F936BC /* dateViewAbstraction.swift */; };
+		74F6859726C84A5B00F51BCC /* PageTabViewBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6859626C84A5B00F51BCC /* PageTabViewBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		74D8E9F12697488F0097C3F1 /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
 		74DCED5E2698938A00294C5D /* ScrollViewBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewBootcamp.swift; sourceTree = "<group>"; };
 		74F0A48E269B506A00F936BC /* dateViewAbstraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateViewAbstraction.swift; sourceTree = "<group>"; };
+		74F6859626C84A5B00F51BCC /* PageTabViewBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTabViewBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				7474E408268A1B010001ACEA /* Preview Content */,
 				7487CDBA26A9BA7E009345B1 /* DateBootcamp.swift */,
 				7478932026BF8F5300E73ECF /* tabviewBootcamp.swift */,
+				74F6859626C84A5B00F51BCC /* PageTabViewBootcamp.swift */,
 				74C34D1126AEDAB900FFD1FB /* PropertyBootcamp.swift */,
 			);
 			path = Swift101;
@@ -189,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74F6859726C84A5B00F51BCC /* PageTabViewBootcamp.swift in Sources */,
 				74848DF32690D73500764BCA /* ListEditMode.swift in Sources */,
 				740EC1A726A33D3700C04739 /* AppStorageBootcamp.swift in Sources */,
 				7474E405268A1AFE0001ACEA /* IfGuardLetOnApper.swift in Sources */,
