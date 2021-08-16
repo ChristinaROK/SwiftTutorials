@@ -404,7 +404,9 @@ Button(label, action)
     - inactive
     - transient
 - EditButton()
-- clipShape(Shape())
+- .clipShape(Shape()) : view의 모양을 shape 모양으로 자름
+- .stroke() / .strokeBorder() : shape(Circle, Rectangle, ...) 의 테두리 설정 
+- .border() : shape을 제외한 view (text, image)의 테두리 설정
 - .environment(environment value, value): View modifier
   - environment key에(ex. editMode, locale, )에 새로운 value를 할당 
 - Locale : structure type
