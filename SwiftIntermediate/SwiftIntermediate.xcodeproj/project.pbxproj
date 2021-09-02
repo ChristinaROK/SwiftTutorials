@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74AC6A8026BC866E00AD9150 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AC6A7F26BC866E00AD9150 /* Charts.swift */; };
+		7467630F26DA86D400A64AE1 /* barChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467630E26DA86D400A64AE1 /* barChart.swift */; };
 		74AC6A8426BC880500AD9150 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 74AC6A8326BC880500AD9150 /* SwiftUICharts */; };
+		74CBA37026DABA0B00AC24AF /* CoreDataBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CBA36F26DABA0B00AC24AF /* CoreDataBootcamp.swift */; };
+		74CBA37426DABC6100AC24AF /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74CBA37226DABC6100AC24AF /* FruitsContainer.xcdatamodeld */; };
 		74CEBDE626AD0268003613B3 /* SwiftIntermediateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CEBDE526AD0268003613B3 /* SwiftIntermediateApp.swift */; };
 		74CEBDE826AD0268003613B3 /* GeometryReaderBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CEBDE726AD0268003613B3 /* GeometryReaderBootcamp.swift */; };
 		74CEBDEA26AD0269003613B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CEBDE926AD0269003613B3 /* Assets.xcassets */; };
 		74CEBDED26AD0269003613B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CEBDEC26AD0269003613B3 /* Preview Assets.xcassets */; };
+		74E2133B26DB237900ED60BA /* CoreDataRelationshipsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2133A26DB237900ED60BA /* CoreDataRelationshipsBootcamp.swift */; };
+		74E2133F26DB24AA00ED60BA /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74E2133D26DB24AA00ED60BA /* CoreDataContainer.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		74AC6A7F26BC866E00AD9150 /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
+		7467630E26DA86D400A64AE1 /* barChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = barChart.swift; sourceTree = "<group>"; };
+		74CBA36F26DABA0B00AC24AF /* CoreDataBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBootcamp.swift; sourceTree = "<group>"; };
+		74CBA37326DABC6100AC24AF /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
 		74CEBDE226AD0268003613B3 /* SwiftIntermediate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftIntermediate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CEBDE526AD0268003613B3 /* SwiftIntermediateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftIntermediateApp.swift; sourceTree = "<group>"; };
 		74CEBDE726AD0268003613B3 /* GeometryReaderBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderBootcamp.swift; sourceTree = "<group>"; };
 		74CEBDE926AD0269003613B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74CEBDEC26AD0269003613B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74CEBDEE26AD0269003613B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74E2133A26DB237900ED60BA /* CoreDataRelationshipsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRelationshipsBootcamp.swift; sourceTree = "<group>"; };
+		74E2133E26DB24AA00ED60BA /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +64,15 @@
 		74CEBDE426AD0268003613B3 /* SwiftIntermediate */ = {
 			isa = PBXGroup;
 			children = (
-				74AC6A7F26BC866E00AD9150 /* Charts.swift */,
 				74CEBDE526AD0268003613B3 /* SwiftIntermediateApp.swift */,
 				74CEBDE726AD0268003613B3 /* GeometryReaderBootcamp.swift */,
 				74CEBDE926AD0269003613B3 /* Assets.xcassets */,
 				74CEBDEE26AD0269003613B3 /* Info.plist */,
+				7467630E26DA86D400A64AE1 /* barChart.swift */,
+				74CBA36F26DABA0B00AC24AF /* CoreDataBootcamp.swift */,
+				74E2133A26DB237900ED60BA /* CoreDataRelationshipsBootcamp.swift */,
+				74E2133D26DB24AA00ED60BA /* CoreDataContainer.xcdatamodeld */,
+				74CBA37226DABC6100AC24AF /* FruitsContainer.xcdatamodeld */,
 				74CEBDEB26AD0269003613B3 /* Preview Content */,
 			);
 			path = SwiftIntermediate;
@@ -149,7 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74AC6A8026BC866E00AD9150 /* Charts.swift in Sources */,
+				7467630F26DA86D400A64AE1 /* barChart.swift in Sources */,
+				74CBA37026DABA0B00AC24AF /* CoreDataBootcamp.swift in Sources */,
+				74CBA37426DABC6100AC24AF /* FruitsContainer.xcdatamodeld in Sources */,
+				74E2133F26DB24AA00ED60BA /* CoreDataContainer.xcdatamodeld in Sources */,
+				74E2133B26DB237900ED60BA /* CoreDataRelationshipsBootcamp.swift in Sources */,
 				74CEBDE826AD0268003613B3 /* GeometryReaderBootcamp.swift in Sources */,
 				74CEBDE626AD0268003613B3 /* SwiftIntermediateApp.swift in Sources */,
 			);
@@ -359,6 +375,29 @@
 			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		74CBA37226DABC6100AC24AF /* FruitsContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				74CBA37326DABC6100AC24AF /* FruitsContainer.xcdatamodel */,
+			);
+			currentVersion = 74CBA37326DABC6100AC24AF /* FruitsContainer.xcdatamodel */;
+			path = FruitsContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		74E2133D26DB24AA00ED60BA /* CoreDataContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				74E2133E26DB24AA00ED60BA /* CoreDataContainer.xcdatamodel */,
+			);
+			currentVersion = 74E2133E26DB24AA00ED60BA /* CoreDataContainer.xcdatamodel */;
+			path = CoreDataContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 74CEBDDA26AD0268003613B3 /* Project object */;
 }
