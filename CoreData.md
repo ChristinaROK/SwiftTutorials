@@ -1,5 +1,7 @@
 # DataCore (DB)
 
+* [class] [NSManagedObject](https://developer.apple.com/documentation/coredata/nsmanagedobject) 
+
 * [class] NSPersistentContainer(name: "DataCoreName") : Core Data **Stack**
 
   * Model : property, relation 정의
@@ -33,20 +35,17 @@
     request.predictate = filter
     ```
 
-    
 
 
+* delete 
 
+  nullify : if Entity deleted, relationship stays just lossing Entity
 
+  cascade : if Entity deleted, relationship also deleted
 
+  deny : if relationship exists, Entity not deleted
 
-
-
-
-
-
-[entity] Bussiness
-
-[entity] Department
-
-[entity] Employee
+- [core data attribute type](https://developer.apple.com/documentation/coredata/handling_different_data_types_in_core_data)
+  - transformable : 새로운 타입
+  - transient : computed property
+  - derieved

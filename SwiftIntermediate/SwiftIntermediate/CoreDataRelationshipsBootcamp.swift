@@ -23,9 +23,9 @@ class CoreDataManager {
         container = NSPersistentContainer(name: "CoreDataContainer")
         container.loadPersistentStores { (description, error) in
             if let error = error {
-                print("Error loading Core Data. \(error)")
+                print("Error loading Core Data. \(error)"
             }
-        }
+        
         context = container.viewContext
     }
     
@@ -153,6 +153,12 @@ class CoreDataRelationshipViewModel: ObservableObject {
         save()
     }
     
+    func deleteDepartment() {
+        let department = departments[2]
+        manager.context.delete(department)
+        save()
+    }
+    
     func save() {
         businesses.removeAll() // remove pre-existing data
         departments.removeAll()
@@ -164,7 +170,7 @@ class CoreDataRelationshipViewModel: ObservableObject {
             self.getDepartments()
             self.getEmployees()
         }
-        
+    
     }
     
     
@@ -179,7 +185,7 @@ struct CoreDataRelationshipsBootcamp: View {
             ScrollView {
                 VStack(spacing:20) {
                     Button(action: {
-                        vm.getEmployees(forBusiness: vm.businesses[0])//vm.addDepartment() // vm.addBusiness() // //vm.addEmployee()
+                        vm.deleteDepartment() //vm.getEmployees(forBusiness: vm.businesses[0])//vm.addDepartment() // vm.addBusiness() // //vm.addEmployee()
                     }, label: {
                         Text("Action!")
                             .foregroundColor(.white)
@@ -270,7 +276,7 @@ struct DepartmentView: View {
     let entity: DepartmentEntity
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 20, content: {
+        VStack(alignment: .leading, spacing: 20, content: 
             Text("Name : \(entity.name ?? "")")
                 .bold()
             

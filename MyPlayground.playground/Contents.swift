@@ -1,6 +1,33 @@
 import UIKit
 import Foundation
 
+
+print("Now: \(Date())")
+// 1. DateComponent -> Date
+let cal = Calendar.current
+//print(cal.weekdaySymbols)
+
+
+let modelResetDate = DateComponents(month:3, day:28)
+let comp2date = cal.date(from: modelResetDate)
+print("\(comp2date ?? Date())")
+let date2comp = cal.component(.day, from: comp2date!)
+print("\(date2comp)")
+
+let i = 7
+let weekday = cal.weekdaySymbols[i-1]
+
+if let cdResetDate = cal.date(bySetting: .weekday, value: i, of: Date()) {
+    print("\(weekday) : \(cdResetDate)")
+}
+
+// date -> Calendar.DateComponents
+// 둘의 date (=현재)가 왜 다르지?
+print("Now: \(Date())")
+print("\(cal.dateComponents([.year, .month, .day, .weekday, .hour, .minute], from: Date()))")
+
+
+
 //let cal = Calendar.current
 //
 //let dateFormatter = DateFormatter()
@@ -23,43 +50,43 @@ import Foundation
 //print("\(maxHour - currentHour.hour!)")
 
 
-var array = ["a","b","c"]
-
-func rightClick(curIndex:Int, len:Int) -> Int {
-    var newIndex = curIndex+1
-    if newIndex==len {
-        newIndex = 0
-    }
-    return newIndex
-}
-
-func leftClick(curIndex:Int, len:Int) -> Int {
-    var newIndex = curIndex-1
-    if newIndex == -1 {
-        newIndex = len-1
-    }
-    return newIndex
-}
-
-var newIdx = rightClick(curIndex: 0, len: 3)
-print(array[newIdx])
-
-newIdx = rightClick(curIndex: newIdx, len: 3)
-print(array[newIdx])
-
-newIdx = leftClick(curIndex: newIdx, len: 3)
-print(array[newIdx])
-
-newIdx = rightClick(curIndex: newIdx, len: 3)
-print(array[newIdx])
-
-
-
-newIdx = rightClick(curIndex: newIdx, len: 3)
-print(array[newIdx])
-
-newIdx = leftClick(curIndex: newIdx, len: 3)
-print(array[newIdx])
-
-newIdx = rightClick(curIndex: newIdx, len: 3)
-print(array[newIdx])
+//var array = ["a","b","c"]
+//
+//func rightClick(curIndex:Int, len:Int) -> Int {
+//    var newIndex = curIndex+1
+//    if newIndex==len {
+//        newIndex = 0
+//    }
+//    return newIndex
+//}
+//
+//func leftClick(curIndex:Int, len:Int) -> Int {
+//    var newIndex = curIndex-1
+//    if newIndex == -1 {
+//        newIndex = len-1
+//    }
+//    return newIndex
+//}
+//
+//var newIdx = rightClick(curIndex: 0, len: 3)
+//print(array[newIdx])
+//
+//newIdx = rightClick(curIndex: newIdx, len: 3)
+//print(array[newIdx])
+//
+//newIdx = leftClick(curIndex: newIdx, len: 3)
+//print(array[newIdx])
+//
+//newIdx = rightClick(curIndex: newIdx, len: 3)
+//print(array[newIdx])
+//
+//
+//
+//newIdx = rightClick(curIndex: newIdx, len: 3)
+//print(array[newIdx])
+//
+//newIdx = leftClick(curIndex: newIdx, len: 3)
+//print(array[newIdx])
+//
+//newIdx = rightClick(curIndex: newIdx, len: 3)
+//print(array[newIdx])
