@@ -23,6 +23,7 @@ if let cdResetDate = cal.date(bySetting: .weekday, value: i, of: Date()) {
 
 // date -> Calendar.DateComponents
 // 둘의 date (=현재)가 왜 다르지?
+// code 
 print("Now: \(Date())")
 print("\(cal.dateComponents([.year, .month, .day, .weekday, .hour, .minute], from: Date()))")
 
