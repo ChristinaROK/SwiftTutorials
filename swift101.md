@@ -471,6 +471,9 @@ UserDefaults.standard.integer(forKey: "id")
 
 ### Date 
 
+* [Very Good Reference 1](https://sarunw.com/posts/understanding-date-and-datecomponents/)
+* 
+
 ##### Date formatting 용도
 
 * DateFormatter : Date -> String 

@@ -17,14 +17,15 @@ class CoreDataManager {
     
     static let instance = CoreDataManager() // Singleton
     let container: NSPersistentContainer
-    let context: NSManagedObjectContext
+    var context: NSManagedObjectContext
     
     init() {
         container = NSPersistentContainer(name: "CoreDataContainer")
         container.loadPersistentStores { (description, error) in
             if let error = error {
-                print("Error loading Core Data. \(error)"
+                print("Error loading Core Data. \(error)")
             }
+        }
         
         context = container.viewContext
     }
@@ -276,7 +277,7 @@ struct DepartmentView: View {
     let entity: DepartmentEntity
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 20, content: 
+        VStack(alignment: .leading, spacing: 20, content:{
             Text("Name : \(entity.name ?? "")")
                 .bold()
             
